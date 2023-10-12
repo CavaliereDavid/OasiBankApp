@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit" 
+             xmlns:viewmodel="clr-namespace:OasiBank.ViewModel"
+             x:DataType="viewmodel:HomePageViewModel"
+             x:Class="OasiBank.View.HomePage"
+             Title="HomePage">
+
+    <VerticalStackLayout>
+        <Label Text="Bank Transfer" />
+        <Button Text="Enter transaction menu" Command="{Binding NavigateToBankTransferPageCommand }"/>
+        <Label Text="Recharge phone credit"/>
+        <Button Text="Enter phone credit menu" Command="{Binding NavigateToPhoneCreditRechargePageCommand}"/>
+    </VerticalStackLayout>
+    
+</ContentPage>
